@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol ViewCodable {
+public protocol ViewCodable {
     func setupUI()
     func addHierarchy()
     func addConstraints()
     func additionalConfig()
 }
 
-extension ViewCodable {
+public extension ViewCodable {
     func setupUI() {
         addHierarchy()
         addConstraints()

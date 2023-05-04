@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension UIViewController {
+public extension UIViewController {
     func addSubViews(_ views: [UIView]) {
         for subView in views {
             subView.translatesAutoresizingMaskIntoConstraints = false

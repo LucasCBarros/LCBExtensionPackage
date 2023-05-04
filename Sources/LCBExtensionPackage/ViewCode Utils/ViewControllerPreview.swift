@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-struct ViewControllerPreview: UIViewControllerRepresentable {
+public struct ViewControllerPreview: UIViewControllerRepresentable {
     let viewControllerBuilder: () -> UIViewController
 
     init(_ viewControllerBuilder: @escaping () -> UIViewController) {
