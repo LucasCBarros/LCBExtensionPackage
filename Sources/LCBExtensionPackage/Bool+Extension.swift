@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-open extension Bool {
+public extension Bool {
     func isFalse() -> Bool {
         return !self
     }
