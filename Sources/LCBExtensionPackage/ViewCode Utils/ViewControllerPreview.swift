@@ -8,14 +8,14 @@
 import UIKit
 import SwiftUI
 
-public struct ViewControllerPreview: UIViewControllerRepresentable {
-    public let viewControllerBuilder: () -> UIViewController
+open struct ViewControllerPreview: UIViewControllerRepresentable {
+    open let viewControllerBuilder: () -> UIViewController
 
-    public init(_ viewControllerBuilder: @escaping () -> UIViewController) {
+    open init(_ viewControllerBuilder: @escaping () -> UIViewController) {
         self.viewControllerBuilder = viewControllerBuilder
     }
     
-    public func makeUIViewController(context: Context) -> some UIViewController {
+    open func makeUIViewController(context: Context) -> some UIViewController {
         return viewControllerBuilder()
     }
 }
